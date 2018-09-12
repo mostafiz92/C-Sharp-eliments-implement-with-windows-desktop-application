@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{08812448-4D6E-4FC4-9B65-73E864D0F5A5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MyFirstProject</RootNamespace>
+    <AssemblyName>MyFirstProject</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ArrayAndIterationUsingArray.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ArrayAndIterationUsingArray.Designer.cs">
+      <DependentUpon>ArrayAndIterationUsingArray.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassesAndConstractor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassesAndConstractor.Designer.cs">
+      <DependentUpon>ClassesAndConstractor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DecisionAndIteration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DecisionAndIteration.Designer.cs">
+      <DependentUpon>DecisionAndIteration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DefaultForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DefaultForm.Designer.cs">
+      <DependentUpon>DefaultForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EnumerationAndStruct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EnumerationAndStruct.Designer.cs">
+      <DependentUpon>EnumerationAndStruct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExceptionHandling.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExceptionHandling.Designer.cs">
+      <DependentUpon>ExceptionHandling.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IncrementAndDecrementOperator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IncrementAndDecrementOperator.Designer.cs">
+      <DependentUpon>IncrementAndDecrementOperator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IndexForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IndexForm.Designer.cs">
+      <DependentUpon>IndexForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MethodScopeAndParam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MethodScopeAndParam.Designer.cs">
+      <DependentUpon>MethodScopeAndParam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ValueAndReference.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ValueAndReference.Designer.cs">
+      <DependentUpon>ValueAndReference.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VariableAndOperator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VariableAndOperator.Designer.cs">
+      <DependentUpon>VariableAndOperator.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ArrayAndIterationUsingArray.resx">
+      <DependentUpon>ArrayAndIterationUsingArray.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassesAndConstractor.resx">
+      <DependentUpon>ClassesAndConstractor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DecisionAndIteration.resx">
+      <DependentUpon>DecisionAndIteration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DefaultForm.resx">
+      <DependentUpon>DefaultForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EnumerationAndStruct.resx">
+      <DependentUpon>EnumerationAndStruct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExceptionHandling.resx">
+      <DependentUpon>ExceptionHandling.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IncrementAndDecrementOperator.resx">
+      <DependentUpon>IncrementAndDecrementOperator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IndexForm.resx">
+      <DependentUpon>IndexForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MethodScopeAndParam.resx">
+      <DependentUpon>MethodScopeAndParam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="ValueAndReference.resx">
+      <DependentUpon>ValueAndReference.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VariableAndOperator.resx">
+      <DependentUpon>VariableAndOperator.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LogoIcon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LogoIcon1.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
